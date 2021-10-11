@@ -1,0 +1,28 @@
+package test;
+
+import java.util.Scanner;
+public class Hello{
+
+static double calculate(double bj,double lv,int nyear) {
+			double zonge;
+			zonge=bj*(Math.pow(1+lv, nyear));
+			return zonge;
+				}
+
+public  static void main(String[] args) {
+	double bj;
+	double lv;
+	int nyear;
+	Scanner in=new Scanner(System.in);
+	System.out.println("本金：");
+	bj=in.nextDouble();
+	System.out.println("存款年限");
+	nyear=in.nextInt();
+	System.out.println("利率：");
+	lv=in.nextDouble();
+	System.out.println("总额："+calculate(bj,lv,nyear));
+	
+	
+		
+	}
+}
